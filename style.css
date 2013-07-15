@@ -1,0 +1,126 @@
+
+/*  This entire doc is a layout experiment.
+	I'm trying to learn how to place <div>s   
+	and to learn how several different elements will
+	"react" to one another in the browser. */
+
+
+/* something that I ripped of off learnlayout.com: */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+/* whenever I attempt to say "position: fixed;", then the .intro is suddenly encroaching 
+    into or behind the header element */
+header {
+	background-color: #FAFF70;
+	margin-top: 0px;
+}
+
+ul {
+	list-style-type: none;
+	background-color:  #FAFF70;
+	margin-top: 0px;
+	position: fixed;
+	}
+	
+	
+li {
+	text-align: center;
+	color: #7C8EA1;
+	font-family: 'Caudex', serif;
+	font-size: 1.5em;
+	float: left;
+	padding-left: 75px;
+	text-indent: -2em;
+	}
+	
+	
+/*  hmmmm...   I'm trying to create margin left & right of the 
+intro.  No luck.  Is this a function of headers? 
+
+I try to change the margin-top so that it's not hiding behind the nav--
+	when I do, then the problem remains, but now the element runs back over to margin-left: 0;
+	
+	what gives????
+	
+*/
+
+
+
+.intro {
+	background-color: #ededed;
+	max-width: 80%;
+	margin-left: 10%;
+	}
+	
+
+
+/*  I don't understand "padding" here (in the #box):
+	When I increase padding, it seems to increase #box's area
+	rather than shrinking it--or moving it away from borders--
+	which is what I'd expect.  */
+#box {
+	background-color: #375736;
+	max-height: 350px;
+	max-width: 350px;
+	}
+	
+.logo {
+	color: #fff;
+	font-size: 10em;
+	text-align: center;
+	padding-left: 20px;
+	padding-top: 20px;
+	}
+	
+/* don't understand why I cannot put a border 
+	on this #motto   */
+	
+#motto {
+	color: #E9EDCC;
+	font-family: garamond;
+	background-color: #BF0221;
+	margin: 0px;
+	border-width: 3px;
+	border-color: green;
+	}
+	
+h1, h2 {
+	padding: 5px;
+	}
+	
+#tagline {
+	color: #E9EDCC;
+	font-family: ariel;
+	text-align: left;
+	background-color: #878A79;
+	margin: 0px;
+	}
+	
+	
+/* I used googlefonts for the "caudex" font here.  
+	Just thought I'd try it out.  Linked from 
+	the head in html.    */
+
+p {
+	color: #7C8EA1;
+	font-family: 'Caudex', serif;
+	font-size: 1.5em;
+	max-width: 600px;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 70px;
+	padding-left: .5em;
+	padding-right: .5em;
+	
+} 
+	
+	
+	
+
+	
+	
