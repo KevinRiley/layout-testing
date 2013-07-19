@@ -18,13 +18,27 @@
 header {
 	background-color: #FAFF70;
 	margin-top: 0px;
+	position: fixed;
+	width: 100%
 }
+
+html {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	height: 100%;
+	}
+	
+body {
+	height: 100%;
+	}
+
 
 ul {
 	list-style-type: none;
 	background-color:  #FAFF70;
 	margin-top: 0px;
-	position: fixed;
+	width: 100%;
 	}
 	
 	
@@ -34,7 +48,7 @@ li {
 	font-family: 'Caudex', serif;
 	font-size: 1.5em;
 	float: left;
-	padding-left: 75px;
+	padding-left: 10%;
 	text-indent: -2em;
 	}
 	
@@ -49,12 +63,11 @@ I try to change the margin-top so that it's not hiding behind the nav--
 	
 */
 
-
-
 .intro {
 	background-color: #ededed;
-	max-width: 80%;
-	margin-left: 10%;
+	margin: 0 auto;
+	width: 80%;
+
 	}
 	
 
@@ -63,30 +76,37 @@ I try to change the margin-top so that it's not hiding behind the nav--
 	When I increase padding, it seems to increase #box's area
 	rather than shrinking it--or moving it away from borders--
 	which is what I'd expect.  */
-#box {
+	
+	
+/*  OK...  Putting a border around the .box gets rid of the unwanted 160px space at the 
+	top of the view space.  WHY IS THIS?? Do not understand.  Conversely, removing the
+	border will bring back the unwanted space.   Huh!!!     */
+.box {
 	background-color: #375736;
-	max-height: 350px;
-	max-width: 350px;
+	height: 350px;
+	width: 350px;
+	border: 5px solid #878A79;
+
 	}
 	
+
+/*  Currently, my "logo" (1) is situated lower than the containing div.
+	Not understanding this at all.  Why is it "taller"?  */
 .logo {
 	color: #fff;
 	font-size: 10em;
 	text-align: center;
-	padding-left: 20px;
-	padding-top: 20px;
 	}
 	
-/* don't understand why I cannot put a border 
-	on this #motto   */
 	
+
 #motto {
 	color: #E9EDCC;
 	font-family: garamond;
 	background-color: #BF0221;
 	margin: 0px;
-	border-width: 3px;
-	border-color: green;
+	border: 3px dotted green;
+	box-sizing: border-box
 	}
 	
 h1, h2 {
@@ -106,14 +126,16 @@ h1, h2 {
 	Just thought I'd try it out.  Linked from 
 	the head in html.    */
 
+#songtext {
+	width: 600px;
+	height: 400px;
+	margin: 40px auto 100px auto;
+}
+
 p {
 	color: #7C8EA1;
 	font-family: 'Caudex', serif;
 	font-size: 1.5em;
-	max-width: 600px;
-	margin: auto;
-	margin-top: 40px;
-	margin-bottom: 70px;
 	padding-left: .5em;
 	padding-right: .5em;
 	
